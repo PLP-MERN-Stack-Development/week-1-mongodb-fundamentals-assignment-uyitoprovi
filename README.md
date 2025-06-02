@@ -45,3 +45,84 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
 - [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+
+
+## ----------------------- Correction -----------------------------------
+
+# MongoDB Fundamentals – Week 1 Assignment
+
+## 🛠️ Setup Instructions
+
+- **MongoDB Atlas** account created
+- **Database Name:** `plp_bookstore`
+- **Collection Name:** `books`
+- **User:** `plp_user` with `readWrite` access
+- **Documents Inserted:** via `insert_books.js`
+
+## 🔧 Technologies Used
+
+- MongoDB Atlas (cloud database)
+- MongoDB Compass (GUI)
+- MongoDB Shell (`mongosh`)
+- Node.js (v18+)
+
+## 📂 Files Included
+
+| File Name         | Description                                 |
+|------------------|---------------------------------------------|
+| `insert_books.js` | Script to insert initial book data         |
+| `queries.js`      | All MongoDB queries (CRUD, filter, sort, etc.) |
+| `README.md`       | Setup and documentation                    |
+
+## 📋 Tasks Completed
+
+### ✅ 1. MongoDB Atlas Setup
+- ✔️ Created MongoDB Atlas cluster
+- ✔️ Created database: `plp_bookstore`
+- ✔️ Created collection: `books`
+- ✔️ Created user: `plp_user` with appropriate privileges
+
+### ✅ 2. Insert Books
+- Inserted 12 sample book documents using `insert_books.js`
+
+### ✅ 3. CRUD Operations in `queries.js`
+- Create: `insertOne()`, `insertMany()`
+- Read: `find()`, `findOne()`
+- Update: `updateOne()`, `updateMany()`
+- Delete: `deleteOne()`, `deleteMany()`
+
+### ✅ 4. Advanced Queries
+- Filtering by author and year
+- Projection to return specific fields
+- Sorting by rating
+
+### ✅ 5. Aggregation Pipelines
+- Used `$group` to find average rating
+- Used `$match` and `$project` for conditional queries
+
+### ✅ 6. Indexing
+- Created indexes on `title`, `author`
+- Verified indexes using `.indexes()` and Compass
+
+## 🖼️ Screenshots
+
+Include the following:
+- 📸 Compass showing `plp_bookstore.books` collection
+- 📸 Output from running `queries.js`
+- 📸 Index tab from Compass or `db.books.getIndexes()` output
+
+## 📦 How to Run
+
+# Install dependencies
+npm install
+
+# Run your query script
+node queries.js
+
+## ouutputs 
+![MongoDB Connection](screenshots/connection.png)
+
+![alt text](screenshots/find.png)
+![Indexes](screenshots/indexes.png)
+![Aggregation Result](screenshots/aggregation.png)
+![Books Documents](screenshots/booklist.png)
